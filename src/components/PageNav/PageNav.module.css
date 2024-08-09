@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  padding-top: 40px;
+}
+
+.logoContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  flex: 1;
+  padding-left: 64px;
+  z-index: 1;
+}
+
+.logoContainer hr {
+  width: 100%;
+  height: 1px;
+
+  color: var(--white);
+  opacity: 0.25;
+}
+
+.nav {
+  min-width: 664px;
+  height: 96px;
+
+  margin-left: -32px;
+  padding-right: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex: 1;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(40px);
+}

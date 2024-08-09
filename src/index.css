@@ -26,7 +26,46 @@
   box-sizing: border-box;
   outline: 0;
 }
+body {
+  min-height: 100vh;
+}
 
-a.active {
-  color: var(--on-active);
+a.nav-link {
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  color: #fff;
+  font: var(--font-16);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+a.nav-link span {
+  font-weight: 700;
+  letter-spacing: 2.7px;
+}
+
+a.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+}
+
+a.nav-link:hover::before {
+  width: 100%;
+  background-color: var(--on-hover);
+  transition: width 0.3s linear;
+}
+
+a.nav-link.active::before {
+  width: 100%;
+  background-color: var(--on-active);
 }
