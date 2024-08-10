@@ -1,0 +1,75 @@
+.homeContent {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  padding: 128px 11.45%;
+}
+
+.homeContent div {
+  flex: 1;
+  max-width: 540px;
+}
+.homeText {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 24px;
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.homeText h2 {
+  color: var(--blue-300);
+  font: var(--font-condensed-28);
+  letter-spacing: 4px;
+}
+
+.homeText h1 {
+  font: var(--font-144);
+}
+
+.homeText p {
+  color: var(--blue-300);
+  font: var(--font-18);
+}
+
+.btnContainer button {
+  position: relative;
+  width: 272px;
+  height: 272px;
+  border-radius: 50%;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--blue-900);
+  font: var(--font-32);
+  border: none;
+  cursor: pointer;
+}
+
+.btnContainer button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.1s ease-in;
+}
+
+.btnContainer button:hover {
+  color: #0b0d1780;
+}
+
+.btnContainer button:hover::before {
+  transform: scale(1.32);
+}
