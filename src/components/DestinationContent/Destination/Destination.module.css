@@ -1,0 +1,58 @@
+.destination {
+  min-height: 734px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.destination img,
+.destinationInfo {
+  max-width: 480px;
+  flex: 1;
+}
+
+.destinationInfo h1 {
+  margin-top: 40px;
+  color: var(--white);
+  font: var(--font-96);
+}
+
+.destinationInfo > p {
+  margin-top: 16px;
+  color: var(--blue-300);
+  font: var(--font-18);
+}
+
+.destinationInfo > hr {
+  margin: 40px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+
+  opacity: 0.25;
+  border: none;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats span {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stats span small {
+  color: var(--blue-300);
+  font: var(--font-14);
+  letter-spacing: 2px;
+}
+
+.stats span h2 {
+  color: var(--white);
+  font: var(--font-bellefair-28);
+}

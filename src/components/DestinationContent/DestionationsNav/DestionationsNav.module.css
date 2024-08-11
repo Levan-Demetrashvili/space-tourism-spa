@@ -1,0 +1,8 @@
+.destinationNav {
+  display: flex;
+  gap: 32px;
+  height: 32px;
+}
+.destinationNav a {
+  align-items: flex-start !important;
+}

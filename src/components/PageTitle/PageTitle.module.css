@@ -1,0 +1,14 @@
+.title {
+  display: flex;
+  gap: 24px;
+
+  font: var(--font-condensed-28);
+  color: var(--white);
+  letter-spacing: 4px;
+}
+
+.title strong {
+  font-weight: 700;
+  letter-spacing: 4.725px;
+  opacity: 0.25;
+}
