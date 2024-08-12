@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function useMovies(url, callback) {
+export function useFetchData(url, callback) {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');

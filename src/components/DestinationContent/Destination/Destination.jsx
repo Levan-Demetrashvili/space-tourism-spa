@@ -1,22 +1,12 @@
-import { useEffect } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
-import useFetchData from '../../../hooks/useFetchData';
+import { useGetData } from '../../../hooks/useGetData';
 import styles from './Destination.module.css';
 import DestionationsNav from '../DestionationsNav/DestionationsNav';
+import Loader from '../../Loader/Loader';
 
 export default function Destination() {
-  const [searchParams] = useSearchParams();
-  const navigate = useNavigate();
-  const { data } = useFetchData('http://localhost:8000/destinations');
+  const destination = useGetData('http://localhost:8000/destinations', 'moon');
 
-  const name = searchParams.get('name');
-  const destination = data.find(d => d.name.toLowerCase() === name.toLowerCase());
-
-  useEffect(() => {
-    if (!name) navigate('?name=moon');
-  }, [navigate, name]);
-
-  if (!destination) return <h1>Loading ...</h1>;
+  if (!destination) return <Loader />;
 
   return (
     <div className={styles.destination}>

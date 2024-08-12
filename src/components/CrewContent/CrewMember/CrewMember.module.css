@@ -1,0 +1,40 @@
+.crewMember {
+  position: relative;
+  height: 734px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.about {
+  flex: 1;
+}
+.crewMember picture {
+  max-width: 100%;
+  flex: 1;
+}
+.crewMember img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about p.role {
+  color: var(--white);
+  font: var(--font-32);
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.about h1 {
+  margin-top: 16px;
+  color: var(--white);
+  font: var(--font-56);
+  text-transform: uppercase;
+}
+
+.about p.bio {
+  margin-top: 24px;
+  color: var(--blue-300);
+  font: var(--font-18);
+}

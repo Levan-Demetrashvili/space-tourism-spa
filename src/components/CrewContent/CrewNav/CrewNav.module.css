@@ -1,0 +1,23 @@
+.crewNav {
+  display: flex;
+  gap: 40px;
+
+  position: absolute;
+  left: 0;
+  bottom: 48px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: 0.174363;
+}
+
+.circle:hover {
+  opacity: 0.5;
+}
+.crewNav :global(.active) .circle {
+  opacity: 1;
+}

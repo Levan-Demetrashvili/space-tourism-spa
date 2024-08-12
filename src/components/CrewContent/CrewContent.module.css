@@ -1,0 +1,7 @@
+.crewContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 48px 11.45%;
+}
