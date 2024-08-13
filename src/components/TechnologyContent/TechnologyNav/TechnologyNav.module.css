@@ -1,0 +1,31 @@
+.technologyNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.technologyNav a {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white);
+  font: var(--font-32);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.technologyNav a:hover {
+  border: 1px solid var(--white);
+}
+
+.technologyNav :global(a.active) {
+  border: none;
+  color: var(--blue-900);
+  background-color: #fff;
+}

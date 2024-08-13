@@ -13,8 +13,8 @@ export default function CrewMember() {
         <p className={styles.role}>{person.role}</p>
         <h1>{person.name}</h1>
         <p className={styles.bio}>{person.bio}</p>
+        <CrewNav />
       </div>
-      <CrewNav />
       <picture>
         <img src={person.images.webp} alt={person.name} />
       </picture>
