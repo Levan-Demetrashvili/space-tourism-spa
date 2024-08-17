@@ -5,3 +5,10 @@
   padding: 48px 0;
   margin-left: 11.45%;
 }
+
+@media only screen and (max-width: 800px) {
+  .technologyContent {
+    margin: 0;
+    padding: 40px;
+  }
+}

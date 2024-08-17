@@ -1,9 +1,12 @@
 import { useGetData } from '../../../hooks/useGetData';
+import { useMedia } from '../../../contexts/MediaContext';
+
 import styles from './TechItem.module.css';
 import Loader from '../../Loader/Loader';
 import TechnologyNav from '../TechnologyNav/TechnologyNav';
 
 export default function TechItem() {
+  const { isMobile, isTablet } = useMedia();
   const techItem = useGetData('http://localhost:8000/technology', 'launch vehicle');
   if (!techItem) return <Loader />;
 
@@ -18,7 +21,7 @@ export default function TechItem() {
         </div>
       </div>
       <picture>
-        <img src={techItem.images.portrait} alt={techItem.name} />
+        <img src={isMobile || isTablet ? techItem.images.landscape : techItem.images.portrait} alt={techItem.name} />
       </picture>
     </div>
   );

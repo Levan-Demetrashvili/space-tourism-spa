@@ -1,7 +1,7 @@
 .technologyNav {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 32px;
 }
 
 .technologyNav a {
@@ -28,4 +28,14 @@
   border: none;
   color: var(--blue-900);
   background-color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .technologyNav {
+    flex-direction: row;
+  }
+  .technologyNav a {
+    width: 56px;
+    height: 56px;
+  }
 }
