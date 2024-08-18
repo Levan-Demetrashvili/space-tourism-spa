@@ -56,12 +56,7 @@
   .techItem {
     flex-direction: column-reverse;
   }
-  .techItem picture {
-    max-width: none;
-  }
-  .techItem picture img {
-    max-width: none;
-  }
+
   .wrapper {
     flex-direction: column;
     align-items: center;
@@ -71,5 +66,17 @@
 
   .techItemInfo p.description {
     margin-top: 16px;
+  }
+
+  .techItem picture {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .techItem picture img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
   }
 }

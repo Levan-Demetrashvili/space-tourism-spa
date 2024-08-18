@@ -36,3 +36,27 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(40px);
 }
+
+@media only screen and (max-width: 800px) {
+  .header {
+    padding: 0;
+  }
+
+  .logoContainer {
+    padding: 0;
+    margin-left: 40px;
+    justify-content: flex-start;
+  }
+
+  .logoContainer hr {
+    display: none;
+  }
+
+  .nav {
+    min-width: auto;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    padding-inline: 2.5rem;
+  }
+}

@@ -8,6 +8,7 @@
 
 @media only screen and (max-width: 800px) {
   .technologyContent {
+    position: relative;
     margin: 0;
     padding: 40px;
   }

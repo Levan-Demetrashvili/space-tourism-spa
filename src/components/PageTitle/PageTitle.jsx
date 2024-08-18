@@ -1,4 +1,4 @@
-import styles from "./PageTitle.module.css";
+import styles from './PageTitle.module.css';
 
 export default function PageTitle({ num, text }) {
   return (

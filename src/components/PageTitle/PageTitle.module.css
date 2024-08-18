@@ -12,3 +12,10 @@
   letter-spacing: 4.725px;
   opacity: 0.25;
 }
+
+@media only screen and (max-width: 800px) {
+  .title,
+  .title strong {
+    letter-spacing: 3px;
+  }
+}
