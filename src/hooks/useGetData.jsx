@@ -8,7 +8,6 @@ export function useGetData(url, initialQuery = '') {
   const navigate = useNavigate();
   const { data } = useFetchData(url);
   const name = searchParams.get('name');
-
   useEffect(() => {
     if (!name) navigate(`?name=${initialQuery}`);
   }, [navigate, name, initialQuery]);

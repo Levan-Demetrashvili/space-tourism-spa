@@ -71,6 +71,7 @@
   .techItem picture {
     width: 100%;
     height: fit-content;
+    align-items: center;
   }
 
   .techItem picture img {

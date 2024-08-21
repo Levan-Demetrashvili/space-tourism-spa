@@ -9,8 +9,6 @@
   --on-hover: #ffffff80;
   --on-active: #fff;
 
-  --font-144: 400 9rem / normal 'Bellefair', serif;
-  --font-100: 400 6.25rem / normal 'Bellefair', serif;
   --font-96: 400 6rem / normal 'Bellefair', serif;
   --font-56: 400 3.5rem / normal 'Bellefair', serif;
   --font-32: 400 2rem / normal 'Bellefair', serif;
@@ -74,15 +72,21 @@ a.nav-link.active::before {
 
 @media only screen and (max-width: 800px) {
   :root {
-    --font-144: 400 9rem / normal 'Bellefair', serif;
-    --font-100: 400 6.25rem / normal 'Bellefair', serif;
     --font-96: 400 5rem / normal 'Bellefair', serif;
     --font-56: 400 2.5rem / normal 'Bellefair', serif;
     --font-32: 400 1.5rem / normal 'Bellefair', serif;
-    --font-bellefair-28: 400 1.75rem / normal 'Bellefair', serif;
     --font-condensed-28: 400 1.25rem / normal 'Barlow Condensed', sans-serif;
     --font-18: 400 1rem /180% 'Barlow', sans-serif;
-    --font-16: 400 1rem / normal 'Barlow Condensed', sans-serif;
-    --font-14: 400 0.875rem / normal 'Barlow Condensed', sans-serif;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --font-144: 400 5rem / normal 'Bellefair', serif;
+    --font-96: 400 3.5rem / normal 'Bellefair', serif;
+    --font-56: 400 1.5rem / normal 'Bellefair', serif;
+    --font-32: 400 1.125rem / normal 'Bellefair', serif;
+    --font-condensed-28: 400 1rem / normal 'Barlow Condensed', sans-serif;
+    --font-18: 400 0.938rem /180% 'Barlow', sans-serif;
   }
 }

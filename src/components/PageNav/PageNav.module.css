@@ -60,3 +60,15 @@
     padding-inline: 2.5rem;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+  }
+  .logoContainer {
+    flex: none;
+    margin-left: 0;
+  }
+}

@@ -13,3 +13,9 @@
     padding: 40px;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .technologyContent {
+    padding: 24px 24px 48px;
+  }
+}
