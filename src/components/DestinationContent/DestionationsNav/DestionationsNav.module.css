@@ -6,3 +6,16 @@
 .destinationNav a {
   align-items: flex-start !important;
 }
+
+@media only screen and (max-width: 1024px) {
+  .destinationNav {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .destinationNav a {
+    font: var(--font-14) !important;
+    letter-spacing: 2.1px !important;
+  }
+}

@@ -5,3 +5,15 @@
   gap: 24px;
   padding: 48px 11.45%;
 }
+
+@media only screen and (max-width: 800px) {
+  .crewContent {
+    padding: 40px 40px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .crewContent {
+    padding: 24px;
+  }
+}

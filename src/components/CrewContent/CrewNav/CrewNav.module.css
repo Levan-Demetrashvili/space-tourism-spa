@@ -21,3 +21,17 @@
 .crewNav :global(.active) .circle {
   opacity: 1;
 }
+
+@media only screen and (max-width: 800px) {
+  .crewNav {
+    position: static;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+}

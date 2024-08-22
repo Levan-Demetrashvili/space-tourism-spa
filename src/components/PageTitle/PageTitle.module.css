@@ -1,6 +1,5 @@
 .title {
   display: flex;
-  justify-content: center;
   gap: 24px;
 
   font: var(--font-condensed-28);
@@ -18,5 +17,12 @@
   .title,
   .title strong {
     letter-spacing: 3px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    justify-content: center;
+    letter-spacing: 2.4px;
   }
 }

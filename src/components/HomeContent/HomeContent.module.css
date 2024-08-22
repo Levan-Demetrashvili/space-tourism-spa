@@ -55,7 +55,7 @@
 }
 
 .btnContainer button::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -72,4 +72,45 @@
 
 .btnContainer button:hover::before {
   transform: scale(1.32);
+}
+
+@media only screen and (max-width: 800px) {
+  .homeContent {
+    flex-direction: column;
+    align-items: center;
+    min-height: 676px;
+    padding: 128px 40px;
+    box-sizing: content-box;
+  }
+
+  .homeText {
+    align-self: center;
+    text-align: center;
+  }
+
+  .btnContainer {
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homeContent {
+    padding: 24px;
+    justify-content: flex-start;
+  }
+
+  .homeText {
+    flex: none !important;
+  }
+
+  .btnContainer {
+    flex: 1;
+    align-items: center;
+  }
+
+  .btnContainer button {
+    width: 144px;
+    height: 144px;
+  }
 }

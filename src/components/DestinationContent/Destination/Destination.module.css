@@ -6,7 +6,7 @@
   gap: 32px;
 }
 
-.destination img,
+.imgWrapper,
 .destinationInfo {
   max-width: 480px;
   flex: 1;
@@ -55,4 +55,59 @@
 .stats span h2 {
   color: var(--white);
   font: var(--font-bellefair-28);
+}
+
+@media only screen and (max-width: 1024px) {
+  .destination {
+    flex-direction: column;
+  }
+  .destinationInfo h1,
+  .destinationInfo > p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .destination {
+    min-height: 0;
+  }
+  .imgWrapper {
+    margin: 40px 0;
+  }
+  .destination img {
+    width: 300px;
+  }
+
+  .destinationInfo {
+    max-width: 514px;
+  }
+
+  .destinationInfo h1 {
+    margin-top: 24px;
+  }
+
+  .destinationInfo > hr {
+    margin: 24px 0;
+  }
+
+  .stats span {
+    flex: 1;
+    align-items: center;
+  }
+  .stats {
+    gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .imgWrapper {
+    margin: 25px 0;
+    flex: none;
+  }
+  .destination img {
+    width: 150px;
+  }
+  .stats {
+    flex-direction: column;
+  }
 }

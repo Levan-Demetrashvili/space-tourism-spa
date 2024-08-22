@@ -10,7 +10,9 @@ export default function Destination() {
 
   return (
     <div className={styles.destination}>
-      <img src={destination.images.webp} alt={destination.name} />
+      <div className={styles.imgWrapper}>
+        <img src={destination.images.webp} alt={destination.name} />
+      </div>
       <div className={styles.destinationInfo}>
         <DestionationsNav />
         <h1>{destination.name.toUpperCase()}</h1>
