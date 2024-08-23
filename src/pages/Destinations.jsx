@@ -1,10 +1,12 @@
-import { Suspense } from 'react';
-import useBackground from '../hooks/useBackground';
+import { useMedia } from '../contexts/MediaContext';
+import { useBackground } from '../hooks/useBackground';
+import { useAppTitle } from '../hooks/useAppTitle';
 import DestinationContent from '../components/DestinationContent/DestinationContent';
 
-const BG_SRC = './assets/destination/background-destination-desktop.jpg';
 export default function Destinations() {
-  useBackground(BG_SRC);
+  const { device } = useMedia();
+  useBackground(`./assets/destination/background-destination-${device}.jpg`);
+  useAppTitle('Destinations');
   return (
     <main>
       <DestinationContent />

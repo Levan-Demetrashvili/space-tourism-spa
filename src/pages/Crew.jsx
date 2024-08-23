@@ -1,10 +1,12 @@
+import { useMedia } from '../contexts/MediaContext';
+import { useBackground } from '../hooks/useBackground';
+import { useAppTitle } from '../hooks/useAppTitle';
 import CrewContent from '../components/CrewContent/CrewContent';
-import useBackground from '../hooks/useBackground';
-
-const BG_SRC = './assets/crew/background-crew-desktop.jpg';
 
 export default function Crew() {
-  useBackground(BG_SRC);
+  const { device } = useMedia();
+  useBackground(`./assets/crew/background-crew-${device}.jpg`);
+  useAppTitle('Crew');
   return (
     <main>
       <CrewContent />

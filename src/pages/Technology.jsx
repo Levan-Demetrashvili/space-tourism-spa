@@ -1,10 +1,12 @@
-import useBackground from '../hooks/useBackground';
+import { useMedia } from '../contexts/MediaContext';
+import { useBackground } from '../hooks/useBackground';
+import { useAppTitle } from '../hooks/useAppTitle';
 import TechnologyContent from '../components/TechnologyContent/TechnologyContent';
 
-const BG_SRC = './assets/technology/background-technology-desktop.jpg';
-
 export default function Technology() {
-  useBackground(BG_SRC);
+  const { device } = useMedia();
+  useBackground(`./assets/technology/background-technology-${device}.jpg`);
+  useAppTitle('Technology');
   return (
     <main>
       <TechnologyContent />

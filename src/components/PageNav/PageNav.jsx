@@ -47,16 +47,16 @@ function MobileNavigation({ onClose }) {
     <div className={styles.mobileNavContainer}>
       <img src="/assets/shared/icon-close.svg" alt="close icon" onClick={onClose} />
       <div className={styles.mobileNav}>
-        <NavLink className="nav-link" to="/">
+        <NavLink className={styles.mobileNavLink} to="/">
           HOME
         </NavLink>
-        <NavLink className="nav-link" to="destinations">
+        <NavLink className={styles.mobileNavLink} to="destinations">
           DESTINATION
         </NavLink>
-        <NavLink className="nav-link" to="crew">
+        <NavLink className={styles.mobileNavLink} to="crew">
           CREW
         </NavLink>
-        <NavLink className="nav-link" to="technology">
+        <NavLink className={styles.mobileNavLink} to="technology">
           TECHNOLOGY
         </NavLink>
       </div>

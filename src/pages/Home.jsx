@@ -1,10 +1,12 @@
+import { useMedia } from '../contexts/MediaContext';
+import { useBackground } from '../hooks/useBackground';
+import { useAppTitle } from '../hooks/useAppTitle';
 import HomeContent from '../components/HomeContent/HomeContent';
-import useBackground from '../hooks/useBackground';
-
-const BG_SRC = './assets/home/background-home-desktop.webp';
 
 export default function Home() {
-  useBackground(BG_SRC);
+  const { device } = useMedia();
+  useBackground(`./assets/home/background-home-${device}.jpg`);
+  useAppTitle('Home');
   return (
     <main>
       <HomeContent />
