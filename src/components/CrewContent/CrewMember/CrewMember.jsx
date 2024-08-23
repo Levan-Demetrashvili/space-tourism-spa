@@ -3,8 +3,10 @@ import styles from './CrewMember.module.css';
 import Loader from '../../Loader/Loader';
 import CrewNav from '../CrewNav/CrewNav';
 
+import { BASE_API_URL } from '../../../config';
+
 export default function CrewMember() {
-  const person = useGetData('http://localhost:8000/crew', 'Douglas Hurley');
+  const person = useGetData(BASE_API_URL + 'crew', 'Douglas Hurley');
   if (!person) return <Loader />;
 
   return (

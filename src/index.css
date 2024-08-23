@@ -38,7 +38,7 @@ a.nav-link {
   gap: 12px;
   align-items: center;
 
-  color: #fff;
+  color: var(--white);
   font: var(--font-16);
   text-transform: uppercase;
   text-decoration: none;
@@ -57,7 +57,7 @@ a.nav-link::before {
   bottom: 0;
   width: 0;
   height: 3px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 a.nav-link:hover::before {

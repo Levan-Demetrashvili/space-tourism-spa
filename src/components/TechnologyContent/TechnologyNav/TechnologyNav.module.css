@@ -27,7 +27,7 @@
 .technologyNav :global(a.active) {
   border: none;
   color: var(--blue-900);
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 @media only screen and (max-width: 1200px) {

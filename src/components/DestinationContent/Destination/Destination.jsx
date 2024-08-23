@@ -3,8 +3,10 @@ import styles from './Destination.module.css';
 import DestionationsNav from '../DestionationsNav/DestionationsNav';
 import Loader from '../../Loader/Loader';
 
+import { BASE_API_URL } from '../../../config';
+
 export default function Destination() {
-  const destination = useGetData('http://localhost:8000/destinations', 'moon');
+  const destination = useGetData(BASE_API_URL + 'destinations', 'moon');
 
   if (!destination) return <Loader />;
 

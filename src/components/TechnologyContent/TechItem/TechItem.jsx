@@ -5,9 +5,11 @@ import styles from './TechItem.module.css';
 import Loader from '../../Loader/Loader';
 import TechnologyNav from '../TechnologyNav/TechnologyNav';
 
+import { BASE_API_URL } from '../../../config';
+
 export default function TechItem() {
   const { isMobile, isTablet } = useMedia();
-  const techItem = useGetData('http://localhost:8000/technology', 'launch vehicle');
+  const techItem = useGetData(BASE_API_URL + 'technology', 'launch vehicle');
   if (!techItem) return <Loader />;
 
   return (
