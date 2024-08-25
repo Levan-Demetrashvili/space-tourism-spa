@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-export function useFetchData(url, callback) {
-  const [data, setData] = useState([]);
+export function useFetchData(url: string, callback?: () => void) {
+  const [data, setData] = useState<any[] | object>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -18,7 +18,7 @@ export function useFetchData(url, callback) {
         const data = await res.json();
 
         setData(data);
-      } catch (e) {
+      } catch (e: any) {
         if (e.name !== 'AbortError') setError(e.message);
       } finally {
         setIsLoading(false);

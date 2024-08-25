@@ -6,7 +6,6 @@ export default function DestinationContent() {
   return (
     <div className={styles.destinationContent}>
       <PageTitle num={1} text={'PICK YOUR DESTINATION'} />
-
       <Destination />
     </div>
   );

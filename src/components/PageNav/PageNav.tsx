@@ -23,7 +23,7 @@ export default function PageNav() {
   );
 }
 
-function Nav({ isTablet }) {
+function Nav({ isTablet }: { isTablet: boolean }) {
   return (
     <div className={styles.nav}>
       <NavLink className="nav-link" to="/">
@@ -42,7 +42,7 @@ function Nav({ isTablet }) {
   );
 }
 
-function MobileNavigation({ onClose }) {
+function MobileNavigation({ onClose }: { onClose: () => void }) {
   return (
     <div className={styles.mobileNavContainer}>
       <img src="/assets/shared/icon-close.svg" alt="close icon" onClick={onClose} />

@@ -3,7 +3,7 @@ import styles from './CrewMember.module.css';
 import Loader from '../../Loader/Loader';
 import CrewNav from '../CrewNav/CrewNav';
 
-import { BASE_API_URL } from '../../../config';
+import { BASE_API_URL } from '../../../config/config';
 
 export default function CrewMember() {
   const person = useGetData(BASE_API_URL + 'crew', 'Douglas Hurley');

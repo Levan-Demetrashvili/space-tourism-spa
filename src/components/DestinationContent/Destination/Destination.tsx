@@ -1,9 +1,9 @@
 import { useGetData } from '../../../hooks/useGetData';
-import styles from './Destination.module.css';
 import DestionationsNav from '../DestionationsNav/DestionationsNav';
 import Loader from '../../Loader/Loader';
+import styles from './Destination.module.css';
 
-import { BASE_API_URL } from '../../../config';
+import { BASE_API_URL } from '../../../config/config';
 
 export default function Destination() {
   const destination = useGetData(BASE_API_URL + 'destinations', 'moon');

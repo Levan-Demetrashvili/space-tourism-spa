@@ -5,7 +5,7 @@ import styles from './TechItem.module.css';
 import Loader from '../../Loader/Loader';
 import TechnologyNav from '../TechnologyNav/TechnologyNav';
 
-import { BASE_API_URL } from '../../../config';
+import { BASE_API_URL } from '../../../config/config';
 
 export default function TechItem() {
   const { isMobile, isTablet } = useMedia();

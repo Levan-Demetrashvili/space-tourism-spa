@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router';
 import { useSearchParams } from 'react-router-dom';
 import { useFetchData } from './useFetchData';
 
-export function useGetData(url, initialQuery = '') {
+export function useGetData(url: string, initialQuery: string = '') {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const { data } = useFetchData(url);
@@ -13,5 +13,5 @@ export function useGetData(url, initialQuery = '') {
     if (!name) navigate(`?name=${initialQuery}`);
   }, [navigate, name, initialQuery]);
 
-  return name && data && data.find(d => d.name.toLowerCase() === name.toLowerCase());
+  return name && Array.isArray(data) && data.find(d => d.name.toLowerCase() === name.toLowerCase());
 }
